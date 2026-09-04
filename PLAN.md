@@ -93,7 +93,11 @@ Lv.4 이상은 이번 4주 목표(Lv.2 안정 통과) 범위를 벗어난다. �
 
 ## 더 풀 곳
 
-- [Lv.0 코딩 기초 트레이닝](https://school.programmers.co.kr/learn/challenges?order=recent&levels=0) — 1주차가 버거우면 여기부터
-- [Lv.1 전체](https://school.programmers.co.kr/learn/challenges?order=recent&levels=1) — 손 풀기 추가
-- [Lv.2 전체](https://school.programmers.co.kr/learn/challenges?order=recent&levels=2) — 4주 끝난 뒤 실전
-- [고득점 Kit 전체](https://school.programmers.co.kr/learn/challenges?tab=algorithm_practice_kit) — 유형별 원본 목록
+위 43문제를 다 풀면 고득점 Kit은 끝난다. 백준이 없으므로 다음 공급처를 미리 정해 둔다.
+
+1. **[프로그래머스 코딩테스트 연습](https://school.programmers.co.kr/learn/challenges)** — 페이지 상단 난이도 필터에서 Lv.1·Lv.2를 골라 푼다. 당분간 여기서 충분하다.
+2. **[구름LEVEL](https://level.goorm.io)** — 프로그래머스가 물리면 옮긴다. 실제 기업 코테에서도 쓰는 플랫폼이라 화면이 익숙해진다.
+3. **[SW Expert Academy](https://swexpertacademy.com)** — 문제 수가 많다. 난이도 편차가 커서 골라 풀어야 한다.
+4. **[LeetCode](https://leetcode.com)** — 영어지만 문제 수가 압도적이다. 장기전이 되면 결국 여기로 온다.
+
+> [고득점 Kit 원본 목록](https://school.programmers.co.kr/learn/challenges?tab=algorithm_practice_kit)

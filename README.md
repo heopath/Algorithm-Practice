@@ -48,19 +48,23 @@ git add . && git commit -m "day N: 문제명" && git push
 
 ## 연습 사이트
 
-**백준(BOJ)은 2026년 4월 28일자로 채점 서비스를 중단했다.** 현재 문제 제출이 불가능하며,
-공지에는 "채점 서비스와 함께 곧 다시 돌아오겠다"고 되어 있다. 재개되면 보조로 쓴다.
-solved.ac는 BOJ 채점에 의존하므로 함께 사용할 수 없다.
-
-그래서 **프로그래머스를 주 플랫폼으로 삼는다.** 국내 기업 코딩테스트가 대부분
-프로그래머스 형식이라 실전 화면에 익숙해지는 이점도 있다.
+**백준(BOJ)은 채점 서비스를 중단했다. 돌아오지 않는다고 보고 계획을 짠다.**
+solved.ac도 BOJ 채점에 의존하므로 함께 쓸 수 없다.
+국내 알고리즘 연습의 기본값이 사라졌으므로, 문제를 어디서 계속 구할지를
+처음부터 정해 두어야 한다. 아래가 그 대체 경로다.
 
 | 사이트 | 용도 | 비고 |
 |---|---|---|
-| [프로그래머스](https://school.programmers.co.kr/learn/challenges) | 메인 | 무료. 국내 코테 표준 |
-| [구름LEVEL](https://level.goorm.io) | 보충 | 무료. 국내 기업 코테 플랫폼으로도 사용됨 |
-| [SW Expert Academy](https://swexpertacademy.com) | 보충 | 무료. 삼성 계열 |
-| [코드트리](https://www.codetree.ai) | 선택 | 유료. 커리큘럼형 |
+| [프로그래머스](https://school.programmers.co.kr/learn/challenges) | 메인 | 무료. 국내 코테 표준 형식 |
+| [구름LEVEL](https://level.goorm.io) | 2순위 | 무료. 실제 기업 코테 플랫폼으로도 쓰임 |
+| [SW Expert Academy](https://swexpertacademy.com) | 3순위 | 무료. 문제 수가 많음 |
+| [코드트리](https://www.codetree.ai) | 선택 | 유료. 커리큘럼형이라 순서를 대신 정해 줌 |
+| [LeetCode](https://leetcode.com) | 장기 | 영어. 문제 수가 압도적으로 많음 |
+
+**4주가 끝나면 고득점 Kit은 동난다.** 43문제뿐이다.
+그 다음은 프로그래머스 Lv.2 전체와 구름LEVEL로 넘어가고,
+그래도 부족하면 LeetCode를 연다. 영어가 부담이면 코드트리를 결제하는 편이
+문제를 찾아 헤매는 시간보다 싸다.
 
 ---
 
