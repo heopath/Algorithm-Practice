@@ -1,21 +1,22 @@
 # 4주 진행표
 
-매일 여기 들어와서 위에서부터 순서대로 푼다.
-문제 이름을 누르면 바로 프로그래머스로 이동한다.
+Java로 직접 구현하고 풀이 이유를 설명하는 연습입니다. 필수 새 문제는 **22개**이며, 해설 없이 재풀이할 시간을 포함합니다.
 
-**하루 2문제** — 새 문제 1개 + 예전에 틀린 문제 1개.
-**30분 룰** — 30분 고민해서 접근이 안 잡히면 해설을 본다. 대신 그날 안에 다시 구현하고 3일 뒤 한 번 더.
+- 하루 새 문제는 최대 1개. 주차별 새 문제를 풀고 남는 날은 복습합니다.
+- 풀이 30~40분 동안 접근을 시도한 뒤 막히면 힌트부터 확인합니다.
+- AI나 해설을 참고한 문제는 도움 여부를 기록하고, 자료를 닫은 뒤 다시 구현합니다.
+- 3일 뒤와 7일 뒤에 다시 풀고 결과를 [LOG.md](LOG.md)에 남깁니다.
+- 체크박스는 해당 문제를 직접 제출해 통과했을 때 표시합니다. 독립 풀이 여부는 로그에 별도로 기록합니다.
+- 면접 일정이 있거나 이전 주차가 어려우면 기간을 늘립니다. 4주 완주보다 이해와 재현을 우선합니다.
 
-푼 문제는 `- [ ]` 를 `- [x]` 로 바꾸고, 코드는 해당 주차 폴더에 올린다.
-기록은 [LOG.md](LOG.md), 문법이 막히면 [CHEATSHEET.md](CHEATSHEET.md).
+## 완료 기준
 
-> 난이도가 낮은 것부터 배치했다. 순서를 지키는 편이 덜 막힌다.
+- Lv.1 문제를 스스로 구현할 수 있습니다.
+- 주요 Lv.2 문제에서 자료구조 선택 이유와 시간복잡도를 설명할 수 있습니다.
+- 힌트로 배운 문제를 며칠 뒤 자료 없이 다시 풀 수 있습니다.
+- 4주 후 새로운 Lv.1·Lv.2 문제를 시간 제한을 두고 시도해 다음 학습 범위를 정합니다.
 
----
-
-### 1주차 — 손 풀기 (Lv.1)
-
-Java 문법과 자료형에 손이 다시 붙는 것이 목적이다. 어려우면 안 된다.
+## 1주차 — Java 기본기·해시·배열
 
 - [ ] [완주하지 못한 선수](https://school.programmers.co.kr/learn/courses/30/lessons/42576) `Lv.1` 해시
 - [ ] [폰켓몬](https://school.programmers.co.kr/learn/courses/30/lessons/1845) `Lv.1` 해시
@@ -23,57 +24,49 @@ Java 문법과 자료형에 손이 다시 붙는 것이 목적이다. 어려우�
 - [ ] [K번째수](https://school.programmers.co.kr/learn/courses/30/lessons/42748) `Lv.1` 정렬
 - [ ] [최소직사각형](https://school.programmers.co.kr/learn/courses/30/lessons/86491) `Lv.1` 완전탐색
 - [ ] [모의고사](https://school.programmers.co.kr/learn/courses/30/lessons/42840) `Lv.1` 완전탐색
-- [ ] [체육복](https://school.programmers.co.kr/learn/courses/30/lessons/42862) `Lv.1` 탐욕법
 
-### 2주차 — 자료구조 (해시·스택/큐·정렬·힙)
-
-무엇을 키로 잡을지, 어떤 자료구조를 고를지 판단하는 훈련이다.
+## 2주차 — 스택·큐·정렬·힙
 
 - [ ] [전화번호 목록](https://school.programmers.co.kr/learn/courses/30/lessons/42577) `Lv.2` 해시
 - [ ] [의상](https://school.programmers.co.kr/learn/courses/30/lessons/42578) `Lv.2` 해시
 - [ ] [기능개발](https://school.programmers.co.kr/learn/courses/30/lessons/42586) `Lv.2` 스택큐
 - [ ] [올바른 괄호](https://school.programmers.co.kr/learn/courses/30/lessons/12909) `Lv.2` 스택큐
-- [ ] [프로세스](https://school.programmers.co.kr/learn/courses/30/lessons/42587) `Lv.2` 스택큐
-- [ ] [다리를 지나는 트럭](https://school.programmers.co.kr/learn/courses/30/lessons/42583) `Lv.2` 스택큐
-- [ ] [주식가격](https://school.programmers.co.kr/learn/courses/30/lessons/42584) `Lv.2` 스택큐
-- [ ] [가장 큰 수](https://school.programmers.co.kr/learn/courses/30/lessons/42746) `Lv.2` 정렬
 - [ ] [H-Index](https://school.programmers.co.kr/learn/courses/30/lessons/42747) `Lv.2` 정렬
 - [ ] [더 맵게](https://school.programmers.co.kr/learn/courses/30/lessons/42626) `Lv.2` 힙
-- [ ] [베스트앨범](https://school.programmers.co.kr/learn/courses/30/lessons/42579) `Lv.3` 해시
 
-### 3주차 — BFS/DFS + 완전탐색 (가장 중요)
-
-출제 빈도 1위. 여기서 막히면 대부분 떨어진다. 한 주를 통째로 쓴다.
+## 3주차 — DFS·BFS·완전탐색
 
 - [ ] [타겟 넘버](https://school.programmers.co.kr/learn/courses/30/lessons/43165) `Lv.2` DFSBFS
 - [ ] [게임 맵 최단거리](https://school.programmers.co.kr/learn/courses/30/lessons/1844) `Lv.2` DFSBFS
-- [ ] [네트워크](https://school.programmers.co.kr/learn/courses/30/lessons/43162) `Lv.3` DFSBFS
-- [ ] [단어 변환](https://school.programmers.co.kr/learn/courses/30/lessons/43163) `Lv.3` DFSBFS
-- [ ] [여행경로](https://school.programmers.co.kr/learn/courses/30/lessons/43164) `Lv.3` DFSBFS
-- [ ] [소수 찾기](https://school.programmers.co.kr/learn/courses/30/lessons/42839) `Lv.2` 완전탐색
 - [ ] [카펫](https://school.programmers.co.kr/learn/courses/30/lessons/42842) `Lv.2` 완전탐색
 - [ ] [피로도](https://school.programmers.co.kr/learn/courses/30/lessons/87946) `Lv.2` 완전탐색
 - [ ] [전력망을 둘로 나누기](https://school.programmers.co.kr/learn/courses/30/lessons/86971) `Lv.2` 완전탐색
 
-### 4주차 — 그리디·DP·이분탐색
+## 4주차 — 탐욕법·문자열·복습
 
-그리디는 쉽고 자주 나온다. DP는 기본 패턴만 익히고 넘어간다.
-
-- [ ] [조이스틱](https://school.programmers.co.kr/learn/courses/30/lessons/42860) `Lv.2` 탐욕법
-- [ ] [큰 수 만들기](https://school.programmers.co.kr/learn/courses/30/lessons/42883) `Lv.2` 탐욕법
+- [ ] [체육복](https://school.programmers.co.kr/learn/courses/30/lessons/42862) `Lv.1` 탐욕법
 - [ ] [구명보트](https://school.programmers.co.kr/learn/courses/30/lessons/42885) `Lv.2` 탐욕법
+- [ ] [가장 큰 수](https://school.programmers.co.kr/learn/courses/30/lessons/42746) `Lv.2` 정렬
+- [ ] [큰 수 만들기](https://school.programmers.co.kr/learn/courses/30/lessons/42883) `Lv.2` 탐욕법
+- [ ] [모음사전](https://school.programmers.co.kr/learn/courses/30/lessons/84512) `Lv.2` 완전탐색
+
+## 후속 학습 — 필수 22개를 복습한 뒤 선택
+
+아래 문제는 처음 4주 분량에 포함하지 않습니다. 앞선 유형이 익숙해지면 필요한 주제를 골라 진행합니다.
+
+- [ ] [프로세스](https://school.programmers.co.kr/learn/courses/30/lessons/42587) `Lv.2` 스택큐
+- [ ] [다리를 지나는 트럭](https://school.programmers.co.kr/learn/courses/30/lessons/42583) `Lv.2` 스택큐
+- [ ] [주식가격](https://school.programmers.co.kr/learn/courses/30/lessons/42584) `Lv.2` 스택큐
+- [ ] [베스트앨범](https://school.programmers.co.kr/learn/courses/30/lessons/42579) `Lv.3` 해시
+- [ ] [네트워크](https://school.programmers.co.kr/learn/courses/30/lessons/43162) `Lv.3` DFSBFS
+- [ ] [단어 변환](https://school.programmers.co.kr/learn/courses/30/lessons/43163) `Lv.3` DFSBFS
+- [ ] [여행경로](https://school.programmers.co.kr/learn/courses/30/lessons/43164) `Lv.3` DFSBFS
+- [ ] [소수 찾기](https://school.programmers.co.kr/learn/courses/30/lessons/42839) `Lv.2` 완전탐색
+- [ ] [조이스틱](https://school.programmers.co.kr/learn/courses/30/lessons/42860) `Lv.2` 탐욕법
 - [ ] [정수 삼각형](https://school.programmers.co.kr/learn/courses/30/lessons/43105) `Lv.3` 동적계획법
 - [ ] [등굣길](https://school.programmers.co.kr/learn/courses/30/lessons/42898) `Lv.3` 동적계획법
 - [ ] [N으로 표현](https://school.programmers.co.kr/learn/courses/30/lessons/42895) `Lv.3` 동적계획법
 - [ ] [입국심사](https://school.programmers.co.kr/learn/courses/30/lessons/43238) `Lv.3` 이분탐색
-- [ ] [모음사전](https://school.programmers.co.kr/learn/courses/30/lessons/84512) `Lv.2` 완전탐색
-
----
-
-## 다 끝낸 뒤 (선택)
-
-여유가 되면 손대는 문제들이다. 위 35문제를 다 풀기 전에는 건드리지 않는다.
-
 - [ ] [아이템 줍기](https://school.programmers.co.kr/learn/courses/30/lessons/87694) `Lv.3` DFS/BFS
 - [ ] [퍼즐 조각 채우기](https://school.programmers.co.kr/learn/courses/30/lessons/84021) `Lv.3` DFS/BFS
 - [ ] [디스크 컨트롤러](https://school.programmers.co.kr/learn/courses/30/lessons/42627) `Lv.3` 힙
@@ -83,21 +76,12 @@ Java 문법과 자료형에 손이 다시 붙는 것이 목적이다. 어려우�
 - [ ] [가장 먼 노드](https://school.programmers.co.kr/learn/courses/30/lessons/49189) `Lv.3` 그래프
 - [ ] [순위](https://school.programmers.co.kr/learn/courses/30/lessons/49191) `Lv.3` 그래프
 
-## 손대지 않는 문제
+DP·이분탐색을 새로 배울 때는 해당 개념과 작은 예제를 먼저 확인하세요. Lv.3 문제는 진도를 맞추기 위해 급하게 넘어가지 않습니다. Lv.4 이상과 고급 자료구조는 현재 목표 이후에 검토합니다.
 
-Lv.4 이상은 이번 4주 목표(Lv.2 안정 통과) 범위를 벗어난다. 시간만 쓰고 얻는 게 적다.
+## 연습 사이트
 
-- 사칙연산 `Lv.4` · 도둑질 `Lv.4` · 징검다리 `Lv.4` · 방의 개수 `Lv.5`
+[프로그래머스](https://school.programmers.co.kr/learn/challenges)를 주 플랫폼으로 사용합니다. 고득점 Kit 밖에도 Lv.1·Lv.2 연습 문제가 있으므로 목록을 마친 뒤 이어서 선택할 수 있습니다.
 
----
+백준은 2026-09-07 공식 홈페이지 기준 채점 서비스 준비 중이며 복귀를 안내하고 있습니다. 재개 시점은 단정하지 않고 현재 사용할 수 있는 플랫폼에서 학습합니다. [백준 공식 안내](https://www.acmicpc.net/)
 
-## 더 풀 곳
-
-위 43문제를 다 풀면 고득점 Kit은 끝난다. 백준이 없으므로 다음 공급처를 미리 정해 둔다.
-
-1. **[프로그래머스 코딩테스트 연습](https://school.programmers.co.kr/learn/challenges)** — 페이지 상단 난이도 필터에서 Lv.1·Lv.2를 골라 푼다. 당분간 여기서 충분하다.
-2. **[구름LEVEL](https://level.goorm.io)** — 프로그래머스가 물리면 옮긴다. 실제 기업 코테에서도 쓰는 플랫폼이라 화면이 익숙해진다.
-3. **[SW Expert Academy](https://swexpertacademy.com)** — 문제 수가 많다. 난이도 편차가 커서 골라 풀어야 한다.
-4. **[LeetCode](https://leetcode.com)** — 영어지만 문제 수가 압도적이다. 장기전이 되면 결국 여기로 온다.
-
-> [고득점 Kit 원본 목록](https://school.programmers.co.kr/learn/challenges?tab=algorithm_practice_kit)
+문법 참고: [CHEATSHEET.md](CHEATSHEET.md)
