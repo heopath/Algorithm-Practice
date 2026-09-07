@@ -1,6 +1,8 @@
 # Java 코테 치트시트
 
-문법이 기억 안 날 때 여는 문서. 알고리즘이 아니라 **손이 굳어서 막히는 것**을 줄이는 용도다.
+문법이 기억 안 날 때 여는 문서. 직접 접근을 생각한 뒤 필요한 문법을 확인하는 용도다.
+
+코드 블록은 독립적인 참고 조각이다. 필요한 클래스·메서드 안에 넣고 `java.util.*`, 스트림 사용 시 `java.util.stream.Collectors` 등을 import한다. 같은 이름의 예제 변수를 한 파일에 모두 붙여 넣지 않는다.
 
 - [자료구조](#자료구조)
 - [정렬](#정렬)
@@ -33,7 +35,7 @@ map.keySet();           // 키 전체
 map.values();           // 값 전체
 ```
 
-> **완주하지 못한 선수**, **의상**, **베스트앨범**이 전부 이 패턴이다.
+> **완주하지 못한 선수**의 개수 세기에 사용한다. **의상**은 종류별 조합 계산, **베스트앨범**은 장르별 합계와 정렬 조건을 추가로 고려한다.
 
 ### Queue — BFS용
 
@@ -71,7 +73,7 @@ pq.poll();   // 가장 작은 값 꺼내면서 제거
 pq.peek();   // 꺼내지 않고 보기
 ```
 
-> **더 맵게**가 이것만 알면 풀린다.
+> **더 맵게**에서는 힙 외에도 두 값을 꺼낼 수 있는지, 목표 달성이 가능한지, 연산 횟수와 정수 범위를 확인한다.
 
 ---
 
@@ -86,14 +88,16 @@ Arrays.sort(boxed, Collections.reverseOrder());   // 내림차순 (int[]는 안 
 
 List<Integer> list = new ArrayList<>();
 Collections.sort(list);
-list.sort((a, b) -> b - a);             // 내림차순
+list.sort((a, b) -> Integer.compare(b, a));             // 내림차순
 ```
+
+정수 비교에 뺄셈을 사용하면 큰 값에서 오버플로가 날 수 있으므로 `Integer.compare`를 사용한다.
 
 ### 2차원 배열 정렬 — 특정 열 기준
 
 ```java
 int[][] arr = {{1, 5}, {2, 3}};
-Arrays.sort(arr, (a, b) -> a[1] - b[1]);   // 1번 열 오름차순
+Arrays.sort(arr, (a, b) -> Integer.compare(a[1], b[1]));   // 1번 열 오름차순
 ```
 
 ### 문자열 이어붙여 큰 수 만들기
@@ -104,7 +108,7 @@ Arrays.sort(nums, (a, b) -> (b + a).compareTo(a + b));
 // "34" "3" "30"  →  "34330"
 ```
 
-> **가장 큰 수** 문제의 핵심. 이 한 줄이 전부다.
+> **가장 큰 수** 문제의 핵심. 정렬 이후 이어붙이기와 모든 값이 0인 경우의 처리가 추가로 필요하다.
 
 ---
 
@@ -112,7 +116,7 @@ Arrays.sort(nums, (a, b) -> (b + a).compareTo(a + b));
 
 ### BFS — 격자에서 최단거리
 
-가장 자주 나온다. 통째로 외워두면 좋다.
+이동 비용이 모두 같은 격자의 최단거리에 사용한다. 방문 표시를 큐에 넣을 때 하는 이유와 거리 증가 과정을 작은 예제로 설명해 본다. 시작점·도착점이 이동 가능한 칸이라는 조건을 가정한다.
 
 ```java
 static int[] dx = {-1, 1, 0, 0};   // 상하좌우
@@ -155,7 +159,13 @@ int bfs(int[][] maps) {
 ### DFS — 재귀
 
 ```java
-static int answer = 0;
+int answer;
+
+public int solution(int[] numbers, int target) {
+    answer = 0; // 같은 객체에서 여러 번 실행해도 이전 결과가 남지 않도록 초기화
+    dfs(numbers, 0, 0, target);
+    return answer;
+}
 
 void dfs(int[] numbers, int idx, int sum, int target) {
     if (idx == numbers.length) {          // 끝까지 왔으면
@@ -173,7 +183,8 @@ void dfs(int[] numbers, int idx, int sum, int target) {
 
 | 상황 | 선택 |
 |---|---|
-| **최단거리**를 묻는다 | BFS |
+| 간선 비용이 같거나 가중치가 없는 그래프의 최단거리 | BFS |
+| 서로 다른 비음수 가중치의 최단거리 | 다익스트라 등 가중치에 맞는 알고리즘 검토 |
 | 모든 경우의 수를 센다 | DFS |
 | 덩어리 개수를 센다 (섬, 네트워크) | 둘 다 가능 |
 
@@ -228,7 +239,7 @@ for (int i = 0; i < n; i++) copy[i] = original[i].clone();
 프로그래머스는 함수만 채우면 되므로 필요 없다.
 **구름LEVEL, SWEA, 그리고 일부 기업 코테**에서 쓴다.
 
-`Scanner`를 쓰면 입력이 많을 때 **알고리즘이 맞아도 시간 초과로 틀린다.**
+입력이 많고 시간 제한이 엄격하면 `Scanner`의 파싱 비용이 부담이 될 수 있다. 입력량과 제한을 확인하고 필요하면 `BufferedReader`를 사용한다.
 
 ```java
 import java.io.*;
